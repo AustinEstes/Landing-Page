@@ -20,6 +20,10 @@
     src: url(fonts/Roboto-Thin.ttf);
 }
 @font-face {
+    font-family: Roboto-thin-italic;
+    src: url(fonts/Roboto-ThinItalic.ttf);
+}
+@font-face {
     font-family: Quicksand;
     src: url(fonts/Quicksand-VariableFont_wght.ttf);
     font-style: normal;
@@ -43,12 +47,17 @@ body {
 }
 
 .logo {
-    font-family: Roboto-bold;
+    font-family: Roboto-thin, sans-serif;
     font-size: 24px;
     color: white;
     min-width: 50%;
     display: flex;
     justify-content: center;
+    align-items: baseline;
+}
+.logo h2 {
+    letter-spacing: 1.2ch;
+    transform: scale(1,.47);
 }
 .menu {
     display: flex;
@@ -70,6 +79,14 @@ ul {
     font-size: 18px;
 }
 
+.menu li {
+    transition: all .3s ease;
+    }
+
+.menu li:hover {
+    transform: scale(1.3);
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -80,13 +97,15 @@ ul {
     display: flex;
     background-color:#1f2937;
     flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
 }
 
 .headshot {
     max-height: 50vh;
     display: flex;
-    padding: 32px;
+    padding: 2em;
     justify-content: center;
 
 }
@@ -97,29 +116,172 @@ ul {
 
 .main-text {
     display: flex;
-    max-width: 20%;
-    padding: 32px;
+    max-width: 40%;
+    gap: 0rem;
     flex-flow: column wrap;
     justify-content: center;
     padding: 0;
-    margin: 0;
+    margin-top: 0;
 }
 
 .main-text h2 {
     color: #e5e7eb;
-    font-size: 24px;
+    font-size: 34px;
     font-family: roboto-black;
+    padding: 0;
+    margin: 0;
 }
 .main-text a, h5 {
     color: white;
+    font-size: 22px;
     
 }
 
 .main-text button {
-    font-family: roboto-bold;
+    font-family: roboto-bold, sans-serif;
+    font-size: 14px;
     color: white;
+    border: 3px solid #3882f6;
     background-color: #3882f6;
     border-radius: 5px;
     max-width: 33%;
     margin: 0;
+    transition: all 0s ease;
+}
+
+.main-text button:hover{
+transform: scale(1.05);
+cursor: pointer;
+}
+
+.main-text button:active {
+    background-color: #3273db;
+    border: #3273db 3px solid;
+    transform: scale(1);
+}
+.listen {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.listen-grid {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 80%;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+.listen-grid > * {
+    border: 3px #3882f6 solid;
+    border-radius: 15px;
+    max-width: 12em;
+
+    max-height: 12em;
+    flex: 1 1 5em;
+    overflow: hidden;
+}
+
+    
+.listen-grid img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: all .5s ease;
+}
+
+.listen-grid img:hover {
+    transform: scale(1.2);
+}
+.listen-grid img:nth-child(5) {
+    border: 4px rgb(220, 91, 26) solid;
+}
+
+.listen h2 {
+    font-family: quicksand, sans-serif;
+    font-size: 44px;
+    margin: 0;
+}
+
+.learn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    background-color: #e5e7eb;
+}
+
+.quote {
+max-width: 50%;
+
+}
+.learn h5 {
+    font-family: Roboto-thin-italic, sans-serif;
+    line-height: 200%;
+    color: black;
+    text-align: center;
+}
+
+.learn h6 {
+    font-family: roboto-thin;
+    letter-spacing: 2ch;
+    line-height: 75%;
+}
+
+.love {
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lovecontainer {
+    background-color:#3882f6;
+min-width: 75%;
+border-radius: 7px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+
+.lovetext {
+    margin-right: 10em;
+color: white;
+font-family: quicksand;
+text-align: justify;
+}
+
+
+.signup2 button{
+    background-color:#3882f6;
+    font-family: roboto-medium;
+    font-size: 13px;
+    border-radius: 5px;
+    border: 2px solid white;
+    color: white;
+    min-width: 100px;
+    padding: .5em;
+    transition: 0s all ease;
+}
+.signup2 button:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+    }
+    
+.signup2 button:active {
+        background-color: #3273db;
+        border: #dcdcdc 3px solid;
+        transform: scale(1);
+    }
+.footer {
+    text-align: center;
+    background-color: #1f2937;
+    color:#e5e7eb;
 }
