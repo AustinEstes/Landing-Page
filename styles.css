@@ -1,0 +1,125 @@
+@font-face {
+    font-family: Roboto-Medium;
+    src: url(fonts/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family: Roboto-Black;
+    src: url(fonts/Roboto-Black.ttf);
+}
+@font-face {
+    font-family: Roboto-Bold;
+    src: url(fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: Roboto-light;
+    src: url(fonts/Roboto-Light.ttf);
+}
+@font-face {
+    font-family: Roboto-Thin;
+    src: url(fonts/Roboto-Thin.ttf);
+}
+@font-face {
+    font-family: Quicksand;
+    src: url(fonts/Quicksand-VariableFont_wght.ttf);
+    font-style: normal;
+}
+body {
+    font-family: Roboto-light, sans-serif;
+    margin: 0;
+    min-height: vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 16px;
+    background-color: #1f2937;
+    color: white;
+    align-items: center;
+}
+
+.logo {
+    font-family: Roboto-bold;
+    font-size: 24px;
+    color: white;
+    min-width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.menu {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    min-width: 50%;
+    justify-content: center;
+}
+
+ul {
+   list-style-type: none; 
+   margin: 0;
+   padding: 0;
+}
+
+.menu-link a {
+    text-decoration: none;
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main {
+    display: flex;
+    background-color:#1f2937;
+    flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.headshot {
+    max-height: 50vh;
+    display: flex;
+    padding: 32px;
+    justify-content: center;
+
+}
+ .main img {
+    max-height: 50vh;
+    border-radius: 200px;
+} 
+
+.main-text {
+    display: flex;
+    max-width: 20%;
+    padding: 32px;
+    flex-flow: column wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.main-text h2 {
+    color: #e5e7eb;
+    font-size: 24px;
+    font-family: roboto-black;
+}
+.main-text a, h5 {
+    color: white;
+    
+}
+
+.main-text button {
+    font-family: roboto-bold;
+    color: white;
+    background-color: #3882f6;
+    border-radius: 5px;
+    max-width: 33%;
+    margin: 0;
+}
